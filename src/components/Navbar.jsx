@@ -23,7 +23,7 @@ function Navbar() {
         justifyContent='space-between'
       >
         <Box maxWidth='200px' border='2px'>
-          <Link href='/'>
+          <Link to='/'>
             <Image src={Logo} alt='' />
           </Link>
         </Box>
