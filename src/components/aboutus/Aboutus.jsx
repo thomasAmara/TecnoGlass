@@ -14,9 +14,6 @@ function Aboutus() {
         display='flex'
         flexDirection='column'
         justifyContent='center'
-        p='15px 20px'
-        // maxW='1180px'
-        // bg='#00221B'
         width='100%'
       >
         <div className='productBanner'>
@@ -172,7 +169,7 @@ function Aboutus() {
                 <Text fontSize='36px' fontWeight='700'>
                   Our Vision
                 </Text>
-                <Text>
+                <Text fontSize='20px' fontWeight='500' color='##F8FAEB'>
                   “To be the indisputable market leader in the manufacturing and
                   distribution of safety glass in Nigeria and West African
                   Sub-region”
@@ -188,7 +185,7 @@ function Aboutus() {
                 <Text fontSize='36px' fontWeight='700'>
                   Our Mission
                 </Text>
-                <Text>
+                <Text fontSize='20px' fontWeight='500' color='##F8FAEB'>
                   “To provide safety, beauty and illumination to our natural
                   environment”
                 </Text>
@@ -203,10 +200,20 @@ function Aboutus() {
                 <Text fontSize='36px' fontWeight='700'>
                   Shared Values
                 </Text>
-                <li>Service Excellence </li>
-                <li>Innovation </li>
-                <li>Integrity</li>
-                <li>Responsibility</li>
+                <Box>
+                  <Text fontSize='20px' fontWeight='500'>
+                    <li>Service Excellence </li>
+                  </Text>
+                  <Text fontSize='20px' fontWeight='500'>
+                    <li>Innovation </li>
+                  </Text>
+                  <Text fontSize='20px' fontWeight='500'>
+                    <li>Integrity</li>
+                  </Text>
+                  <Text fontSize='20px' fontWeight='500'>
+                    <li>Responsibility</li>
+                  </Text>
+                </Box>
               </Box>
             </Stack>
           </Box>

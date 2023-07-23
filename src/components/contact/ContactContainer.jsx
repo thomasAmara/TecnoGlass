@@ -79,8 +79,17 @@ function ContactContainer() {
               <Box mt='20px'>
                 <Textarea></Textarea>
               </Box>
-              <Box>
-                <Button colorScheme='facebook'>Book an appointment</Button>
+              <Box mt='20px'>
+                <Button
+                  color='#FFF'
+                  maxWidth='600px'
+                  width='100%'
+                  height='48px'
+                  bg='#899926'
+                  colorScheme='whatsapp'
+                >
+                  Book an appointment
+                </Button>
               </Box>
             </Box>
           </Formik>
