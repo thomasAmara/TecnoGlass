@@ -1,6 +1,6 @@
 import { Box, Image, Text } from '@chakra-ui/react';
 import React from 'react';
-// import '../style.css';
+import '../../Styles/productInfo.scss';
 import Office from '../../Images/officeBuilding.png';
 
 function Projects() {
@@ -36,7 +36,7 @@ function Projects() {
               Testimonials
             </Text>
           </Box>
-          <Box>
+          <Box px='20px' py='30px'>
             <Text
               fontSize='36px'
               textAlign='center'
@@ -47,11 +47,12 @@ function Projects() {
             </Text>
           </Box>
 
-          <Box>
+          <Box mt='10px' mb='20px' py='10px'>
             <Image src={Office} alt='' />
           </Box>
         </Box>
       </Box>
+      <div className='BgWaveDown'></div>
     </div>
   );
 }

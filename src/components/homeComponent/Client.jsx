@@ -16,7 +16,8 @@ function Client() {
         color='#FFF'
         maxWidth='1180px'
         width='100%'
-        p='20px'
+        px='20px'
+        py='30px'
         bg='#00110E'
       >
         <Box
@@ -40,17 +41,17 @@ function Client() {
           </Text>
         </Box>
         <Box
-          mt='95px'
+          mt='35px'
           border='5px'
-          borderColor='#FF6'
+          //   borderColor='#FF6'
           margin='0 auto'
-          py='20px'
+          py='40px'
         >
-          <Text fontWeight='500' fontSize='20px'>
+          <Text mt='20px' fontWeight='500' fontSize='20px'>
             Trusted by various companies across industries
           </Text>
         </Box>
-        <Box py='20px'>
+        <Box mt='30' py='30px'>
           <SimpleGrid spacing='20px' minChildWidth='260px' direction='row'>
             {Data.map((item, i) => (
               <Box

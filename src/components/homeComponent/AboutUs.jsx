@@ -62,10 +62,22 @@ function Aboutus() {
         </Box>
         <Box margin='0 auto' py='25px'>
           <Button
-            p='10px'
+            p='20px'
             borderRadius='6px'
             boxShadow='0px 1px 2px 0px rgba(105, 81, 255, 0.05)'
             bg='#899926'
+            maxWidth='160px'
+            height='48px'
+            __hover={{
+              color: '#904',
+              backgroundColor: '#452309',
+            }}
+            __active={{
+              backgroundColor: '#445209',
+            }}
+            // colorScheme='brand'
+            // bgColor='Background'
+            width='100%'
             color='#FFF'
           >
             Read More

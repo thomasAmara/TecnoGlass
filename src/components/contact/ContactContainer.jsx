@@ -12,6 +12,8 @@ import {
 import { Formik } from 'formik';
 import CustomInput from './CustomeInput';
 import Ride from '../../Images/Ride.svg';
+import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
+// import { GOOGLE_MAPS_APIKEY } from '@env';
 
 function ContactContainer() {
   return (
@@ -21,8 +23,6 @@ function ContactContainer() {
         display='flex'
         flexDirection='row'
         justifyContent='space-between'
-        border='2px'
-        borderColor='red'
         margin='0 auto'
         maxWidth='1180px'
         // justifyContent='center'
@@ -66,7 +66,12 @@ function ContactContainer() {
                 <Box>
                   <Wrap>
                     <Text>Mobile Phone</Text>
-                    <CustomInput name='Phone' />
+                    <CustomInput
+                      //   backgroundColor='#FFF'
+                      //   inputColor='#FFF'
+                      //   textcolor='#FFF'
+                      name='Phone'
+                    />
                   </Wrap>
                 </Box>
                 <Box>
@@ -77,12 +82,12 @@ function ContactContainer() {
                 </Box>
               </SimpleGrid>
               <Box mt='20px'>
-                <Textarea></Textarea>
+                <Textarea height='240px'></Textarea>
               </Box>
               <Box mt='20px'>
                 <Button
                   color='#FFF'
-                  maxWidth='600px'
+                  maxWidth='740px'
                   width='100%'
                   height='48px'
                   bg='#899926'
@@ -96,6 +101,25 @@ function ContactContainer() {
         </Box>
         <Box>
           <Image src={Ride} alt='' />
+          {/* <GoogleMap
+            mapContainerClassName='map-container'
+            apikey={'AIzaSyDECSoRbyPaXyO_2Al0JXZ8m1JPu9mLzvQ'}
+            //   center={center}
+            zoom={10}
+          /> */}
+          <Box mt='20px'>
+            <Button
+              color='#B7cc33'
+              colorScheme='whatsapp'
+              maxWidth='390px'
+              width='100%'
+              p='15px'
+              height='48px'
+              variant='outline'
+            >
+              Open in Google Maps
+            </Button>
+          </Box>
         </Box>
       </Box>
     </div>

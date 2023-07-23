@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { Box, Image, Stack, Text } from '@chakra-ui/react';
+import { Box, Divider, Image, Stack, Text } from '@chakra-ui/react';
 // import Collection from '../../Images/collections.svg';
 import Collection from '../../Images/collections.svg';
 import '../../Styles/productInfo.scss';
@@ -23,7 +23,7 @@ function Aboutus() {
             alignItems='center'
             flexDirection='row'
           >
-            <Box width='50%' alignItems='center'>
+            <Box maxWidth='580px' p='20px' width='100%' alignItems='center'>
               <Text fontSize='36px' fontWeight='600'>
                 38 years of blending technology with craftsmanship to create
                 quality products and services
@@ -39,11 +39,12 @@ function Aboutus() {
           </Box>
         </div>
 
-        <Box bg='#00110E'>
+        <Box bg='#00110E' width='100%'>
           <Box
             display='flex'
+            maxWidth='1280px'
             justifyContent='center'
-            p='15px 20px'
+            p='15px 25px'
             flexDirection='row'
           >
             <Box display='flex' alignItems='center'>
@@ -57,7 +58,7 @@ function Aboutus() {
               </Text>
             </Box>
           </Box>
-          <Box p='20px'>
+          <Box width='90%' margin='0 auto' px='25px'>
             <Text fontSize='20px' fontWeight='400'>
               Technoglass Industries Limited is a subsidiary of Crystal Glass
               Nigeria Limited. Established in 2004 when the growth of the
@@ -70,8 +71,15 @@ function Aboutus() {
               machines.
             </Text>
           </Box>
-          <Box display='flex' flexDirection='row'>
-            <Box p='20px' width='50%'>
+          <Box
+            display='flex'
+            justifyContent='space-around'
+            width='90%'
+            mt='30px'
+            mb='30px'
+            flexDirection='row'
+          >
+            <Box px='25px' width='50%'>
               <Text fontSize='20px' fontWeight='400'>
                 TGI owns the biggest toughening furnace in West Africa, which
                 can produce maximum size of 2440mm x 3600mm of toughened glass.
@@ -99,12 +107,12 @@ function Aboutus() {
           flexDirection='column'
           bg='#00221B'
         >
-          <Box margin='0 auto' p='20px' border='2px' width='80%'>
+          <Box margin='0 auto' p='20px' mb='20px' mt='25px' width='80%'>
             <Text fontSize='48px' fontWeight='700' textAlign='center'>
               We let the numbers do the talking
             </Text>
           </Box>
-          <Box margin='0 auto' p='20px' border='2px' width='60%'>
+          <Box margin='0 auto' p='20px' mb='20px' mt='25px' width='60%'>
             <Text fontSize='20px' fontWeight='500' textAlign='center'>
               Through close partnership and synergy with top foreign companies,
               we have consistently developed and deployed cutting edge
@@ -114,12 +122,25 @@ function Aboutus() {
           </Box>
           <Box
             display='flex'
+            px='20px'
+            py='25px'
             justifyContent='center'
             flexDirection='column'
-            border='2px'
           >
-            <Stack margin='0 auto' width='70%' direction='row' spacing={40}>
-              <Box direction='column'>
+            <Stack
+              margin='0 auto'
+              //   width='85%'
+              //   py='35px'
+              direction='row'
+              spacing={190}
+              mb='70px'
+            >
+              <Box
+                display='flex'
+                justifyContent='center'
+                alignItems='center'
+                flexDirection='column'
+              >
                 <Text fontSize='48px' color='#B7CC33' fontWeight='700'>
                   235.000
                 </Text>
@@ -153,7 +174,8 @@ function Aboutus() {
               </Box>
             </Stack>
             <Stack
-              p='20px'
+              py='30px'
+              px='20px'
               width='90%'
               margin='0 auto'
               spacing={40}
@@ -169,6 +191,7 @@ function Aboutus() {
                 <Text fontSize='36px' fontWeight='700'>
                   Our Vision
                 </Text>
+                <Divider border='1px' color='#B7CC33' />
                 <Text fontSize='20px' fontWeight='500' color='##F8FAEB'>
                   “To be the indisputable market leader in the manufacturing and
                   distribution of safety glass in Nigeria and West African
@@ -185,6 +208,7 @@ function Aboutus() {
                 <Text fontSize='36px' fontWeight='700'>
                   Our Mission
                 </Text>
+                <Divider border='1px' color='#004436' />
                 <Text fontSize='20px' fontWeight='500' color='##F8FAEB'>
                   “To provide safety, beauty and illumination to our natural
                   environment”
@@ -200,6 +224,7 @@ function Aboutus() {
                 <Text fontSize='36px' fontWeight='700'>
                   Shared Values
                 </Text>
+                <Divider border='1px' color='#B7CC33' />
                 <Box>
                   <Text fontSize='20px' fontWeight='500'>
                     <li>Service Excellence </li>

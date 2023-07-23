@@ -6,21 +6,21 @@ function Contact() {
     <div
       style={{
         backgroundColor: '#00110E',
-        padding: '40px',
+        // padding: '40px',
       }}
     >
       <Box
         display='flex'
         bg='#00110E'
-        px='25'
+        px='25px'
         py='20px'
         color='#FFF'
-        flexDirection='row'
+        flexDirection={['column', 'column', 'row']}
         justifyContent='space-between'
         width='100%'
         maxWidth='1180px'
         margin='0 auto'
-        height='35vh'
+        height={[null, null, '35vh']}
       >
         <Box mt='40px' mb='25px'>
           <Text fontSize='37px' fontWeight='700'>
@@ -43,19 +43,18 @@ function Contact() {
               bg='#899926'
               height='48px'
               variant='ghost'
-              width='200px'
+              width={['130px', '150px', '200px']}
             >
               Request a Quote
             </Button>
             <Button
               p='10px'
-              // isLoading
               borderRadius='6px'
               // colorScheme='teal'
               border='2px'
               color='#B7CC33'
               height='48px'
-              width='200px'
+              width={['130px', '150px', '200px']}
               // bgColor='whatsapp.300'
               variant='outline'
             >

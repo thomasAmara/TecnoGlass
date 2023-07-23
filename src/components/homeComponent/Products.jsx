@@ -58,11 +58,24 @@ function Products() {
           </Text>
         </Box>
         <Box display='flex' mt='25px' py='20px' justifyContent='center'>
-          <SimpleGrid spacingX={20} spacingY={25} columns={3}>
-            {/* <Image src={Glass} alt='' /> */}
+          <SimpleGrid spacingX={20} spacingY={25} columns={[2, 2, 3]}>
             {productArray.map((item, i) => (
-              <Box key={i}>
-                <Image src={item.image} width='280px' alt='' />
+              <Box
+                key={i}
+                display='flex'
+                justifyContent='center'
+                alignItems='center'
+                flexWrap='wrap'
+                p='20px'
+                backgroundImage={`${item.image}`}
+                backgroundSize='cover'
+                backgroundPosition='100% 100%'
+                height={['120px', '220px', '300px']}
+                width={['120px', '220px', '300px']}
+                // maxWidth='300px'
+                textAlign='center'
+              >
+                {/* <Image src={item.image} width='280px' alt='' /> */}
                 <Text fontSize='24px' textAlign='center' fontWeight='600'>
                   {item.name}
                 </Text>

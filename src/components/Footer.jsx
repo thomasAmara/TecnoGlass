@@ -20,7 +20,7 @@ function Footer() {
         flexDirection='column'
         color='#FFF'
         maxWidth='1280px'
-        p='15px 25px'
+        p='22px 25px'
         margin='0 auto'
       >
         <Box
@@ -29,7 +29,7 @@ function Footer() {
           margin='0 auto'
           //   border='2px'
           width='100%'
-          flexDirection='row'
+          flexDirection={['column', 'column', 'row']}
         >
           <Box maxWidth='290px'>
             <Image src={TecnoLogo} width='260px' alt='' />
@@ -95,7 +95,7 @@ function Footer() {
             >
               Find Us
             </Text>
-            <Box maxWidth='400px' width='100%'>
+            <Box maxWidth='360px' width='100%'>
               <Text
                 fontSize='18px'
                 fontWeight='500'
@@ -118,22 +118,44 @@ function Footer() {
         </Box>
         <Box
           display='flex'
+          mt='40px'
+          mb='20px'
           justifyContent='space-between'
           py='20px'
+          px='20px'
           flexDirection='row'
         >
           <Box>
-            <Text>© 2021 Flex. All rights reserved.</Text>
+            <Text fontSize='16px' fontWeight='500' color='#8896AB'>
+              © 2023 Flex. All rights reserved.
+            </Text>
           </Box>
           <Box>
-            <Text> info@technoglassng.com</Text>
+            <Text fontSize='18px' fontWeight='400' color='#B7CC33'>
+              {' '}
+              info@technoglassng.com
+            </Text>
           </Box>
-          <Box display='flex' flexDirection='row'>
-            <Text></Text>
-            <FaFacebookSquare size={24} />
-            <FaInstagram size={24} />
-            <FaTwitterSquare size={24} />
-            <FaLinkedin size={24} />
+          <Box
+            display='flex'
+            justifyContent='space-between'
+            flexDirection='row'
+            p='10px'
+            maxWidth='220px'
+            width='100%'
+          >
+            <Box>
+              <FaFacebookSquare size={24} />
+            </Box>
+            <Box>
+              <FaInstagram size={24} />
+            </Box>
+            <Box>
+              <FaTwitterSquare size={24} />
+            </Box>
+            <Box>
+              <FaLinkedin size={24} />
+            </Box>
           </Box>
         </Box>
       </Box>
