@@ -121,7 +121,7 @@ function Aboutus() {
             flexDirection='column'
             border='2px'
           >
-            <Stack direction='row' spacing={40}>
+            <Stack margin='0 auto' width='70%' direction='row' spacing={40}>
               <Box direction='column'>
                 <Text fontSize='48px' color='#B7CC33' fontWeight='700'>
                   235.000
@@ -155,27 +155,64 @@ function Aboutus() {
                 </Text>
               </Box>
             </Stack>
-            <Stack p='20px' spacing={40} direction='row'>
-              <Box borderRadius='16px' bg='#004436' p='20px'>
+            <Stack
+              p='20px'
+              width='90%'
+              margin='0 auto'
+              spacing={40}
+              direction='row'
+            >
+              <Box
+                borderRadius='16px'
+                width='100%'
+                maxWidth='360px'
+                bg='#004436'
+                p='20px'
+              >
                 <Text fontSize='36px' fontWeight='700'>
                   Our Vision
                 </Text>
+                <Text>
+                  “To be the indisputable market leader in the manufacturing and
+                  distribution of safety glass in Nigeria and West African
+                  Sub-region”
+                </Text>
               </Box>
-              <Box borderRadius='16px' p='20px' bg='#899926'>
+              <Box
+                borderRadius='16px'
+                width='100%'
+                maxWidth='360px'
+                p='20px'
+                bg='#899926'
+              >
                 <Text fontSize='36px' fontWeight='700'>
                   Our Mission
                 </Text>
+                <Text>
+                  “To provide safety, beauty and illumination to our natural
+                  environment”
+                </Text>
               </Box>
-              <Box borderRadius='16px' p='20px' bg='#121405'>
+              <Box
+                borderRadius='16px'
+                width='100%'
+                maxWidth='360px'
+                p='20px'
+                bg='#121405'
+              >
                 <Text fontSize='36px' fontWeight='700'>
                   Shared Values
                 </Text>
+                <li>Service Excellence </li>
+                <li>Innovation </li>
+                <li>Integrity</li>
+                <li>Responsibility</li>
               </Box>
             </Stack>
           </Box>
         </Box>
         <Box display='flex' justifyContent='space-between' bg='#00110E'>
-          <Box>
+          <Box margin='0 auto'>
             <Image src={Ceo} alt='' />
           </Box>
           <Box bg='#004436' w='65%' borderRadius='18px' p='50px'>
