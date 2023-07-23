@@ -12,7 +12,7 @@ import {
 import { Formik } from 'formik';
 import CustomInput from './CustomeInput';
 import Ride from '../../Images/Ride.svg';
-import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
+// import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
 // import { GOOGLE_MAPS_APIKEY } from '@env';
 
 function ContactContainer() {

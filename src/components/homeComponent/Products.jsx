@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, SimpleGrid, Image, Text } from '@chakra-ui/react';
+import { Box, SimpleGrid, Text } from '@chakra-ui/react';
 import Glass from '../../Images/glass6.svg';
 import Glass1 from '../../Images/glass1.png';
 import Glass2 from '../../Images/glass2.png';
