@@ -18,7 +18,7 @@ function Installation() {
           margin='0 auto'
           maxWidth='1280px'
           py='30px'
-          flexDirection='row'
+          flexDirection={['column-reverse', 'column-reverse', 'row']}
           alignItems='center'
           justifyContent='space-between'
         >

@@ -38,7 +38,7 @@ function Aboutus() {
           </Text>
         </Box>
 
-        <Box margin='0 auto' py='25px'>
+        <Box margin='0 auto' textAlign='center' py='25px'>
           <Text fontSize='36px' fontWeight='700'>
             38 years of service excellence
           </Text>

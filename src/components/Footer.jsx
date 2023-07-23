@@ -123,7 +123,7 @@ function Footer() {
           justifyContent='space-between'
           py='20px'
           px='20px'
-          flexDirection='row'
+          flexDirection={['column', 'column', 'row']}
         >
           <Box>
             <Text fontSize='16px' fontWeight='500' color='#8896AB'>
