@@ -1,15 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-'use client';
 import React from 'react';
-import {
-  Box,
-  Button,
-  Image,
-  Stack,
-  Text,
-  Wrap,
-  WrapItem,
-} from '@chakra-ui/react';
+import { Box, Image, Stack, Text } from '@chakra-ui/react';
 // import Collection from '../../Images/collections.svg';
 import Collection from '../../Images/collections.svg';
 import '../../Styles/productInfo.scss';
