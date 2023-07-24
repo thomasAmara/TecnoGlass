@@ -17,14 +17,14 @@ function LuminatedGlass() {
         margin=' 0 auto'
         p='25px'
         justifyContent='space-between'
-        flexDirection='row'
+        flexDirection={['column', 'column', 'row']}
       >
         <Box>
           <Image src={GlassImage} />
         </Box>
         <Box display='flex' flexDirection='column'>
           <Stack spacing='30px' direction='column'>
-            <Box>
+            <Box mt={['20px', '20px', '0px']}>
               <Image src={GlassImage2} />
             </Box>
             <Box>
@@ -44,7 +44,7 @@ function LuminatedGlass() {
             Laminated Glass
           </Text>
         </Box>
-        <Box py='25px'>
+        <Box px='20px' py='25px'>
           <Text fontSize='20px' fontWeight='400'>
             Laminated glass is strong and has a robust structure that is hard to
             break. It is suitable for use in many ways. If you’re thinking of

@@ -77,9 +77,9 @@ function Aboutus() {
             width='90%'
             mt='30px'
             mb='30px'
-            flexDirection='row'
+            flexDirection={['column', 'column', 'row']}
           >
-            <Box px='25px' width='50%'>
+            <Box px='25px' width={['100%', '100%', '50%']}>
               <Text fontSize='20px' fontWeight='400'>
                 TGI owns the biggest toughening furnace in West Africa, which
                 can produce maximum size of 2440mm x 3600mm of toughened glass.
@@ -131,14 +131,15 @@ function Aboutus() {
               margin='0 auto'
               //   width='85%'
               //   py='35px'
-              direction='row'
-              spacing={190}
+              direction={['column', 'row', 'row']}
+              spacing={[20, 50, 190]}
               mb='70px'
             >
               <Box
                 display='flex'
                 justifyContent='center'
                 alignItems='center'
+                flexWrap='wrap'
                 flexDirection='column'
               >
                 <Text fontSize='48px' color='#B7CC33' fontWeight='700'>
@@ -178,8 +179,8 @@ function Aboutus() {
               px='20px'
               width='90%'
               margin='0 auto'
-              spacing={40}
-              direction='row'
+              spacing={[10, 20, 40]}
+              direction={['column', 'column', 'row']}
             >
               <Box
                 borderRadius='16px'
@@ -243,11 +244,21 @@ function Aboutus() {
             </Stack>
           </Box>
         </Box>
-        <Box display='flex' justifyContent='space-between' bg='#00110E'>
+        <Box
+          display='flex'
+          flexDirection={['column', 'row', 'row']}
+          justifyContent='space-between'
+          bg='#00110E'
+        >
           <Box margin='0 auto'>
             <Image src={Ceo} alt='' />
           </Box>
-          <Box bg='#004436' w='65%' borderRadius='18px' p='50px'>
+          <Box
+            bg='#004436'
+            w={['100%', '70%', '65%']}
+            borderRadius='18px'
+            p='50px'
+          >
             <Text fontSize='20px' fontWeight='500'>
               He has over 35 years experience in the banking, business
               development and manufacturing sectors. He set up one of the

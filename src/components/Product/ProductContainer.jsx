@@ -31,7 +31,7 @@ function ProductContainer() {
       <Box
         color='#FFF'
         px='25px'
-        maxWidth='1180px'
+        maxWidth='1280px'
         bg='#00221B'
         width='100%'
         margin='0 auto'
@@ -56,7 +56,7 @@ function ProductContainer() {
                     <Box>
                       <Image src={item.Image} width='320px' alt='' />
                     </Box>
-                    <Text fontWeight='500' fontSize='20px'>
+                    <Text fontWeight='500' fontSize={['16px', '20px', '20px']}>
                       {item.name}
                     </Text>
                   </Box>

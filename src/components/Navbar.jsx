@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../Images/Tecnologo.png';
 import { Box, Button, Text } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { Image } from '@chakra-ui/react';
+import '../Styles/navbar.scss'; //'Navbar.scss'
+// RxHamburgerMenu AiOutlineMenu
+import { RxArrowDown } from 'react-icons/rx';
+import { AiOutlineMenu } from 'react-icons/ai';
 
 function Navbar() {
+  const [active, setActive] = useState(false);
+
+  const handleClick = () => {
+    setActive(!active);
+  };
+
   return (
     <div
       style={{
@@ -12,6 +22,7 @@ function Navbar() {
       }}
     >
       <Box
+        className='Navbar'
         maxWidth='1280px'
         width='100%'
         display='flex'
@@ -27,7 +38,13 @@ function Navbar() {
             <Image src={Logo} alt='' />
           </Link>
         </Box>
+
+        <div className='menu-icon' onClick={handleClick}>
+          <AiOutlineMenu color='#FFF' size={48} />
+          {/* <i className={active ? 'fas fa-times' : 'fas fa-bars'}></i> */}
+        </div>
         <Box
+          className={active ? 'Navmenu active' : 'Navmenu'}
           display='flex'
           justifyContent='space-evenly'
           color='#FFF'
@@ -51,7 +68,7 @@ function Navbar() {
             </Text>
           </Link>
         </Box>
-        <Box>
+        <Box className='Navbutton'>
           <Button
             color='#FFF'
             bg='#899926'
