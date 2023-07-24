@@ -3,9 +3,7 @@ import Logo from '../Images/Tecnologo.png';
 import { Box, Button, Text } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { Image } from '@chakra-ui/react';
-import '../Styles/navbar.scss'; //'Navbar.scss'
-// RxHamburgerMenu AiOutlineMenu
-import { RxArrowDown } from 'react-icons/rx';
+import '../Styles/navbar.scss'; //'Navbar.scss
 import { AiOutlineMenu } from 'react-icons/ai';
 
 function Navbar() {
