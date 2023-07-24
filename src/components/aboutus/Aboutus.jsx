@@ -21,15 +21,15 @@ function Aboutus() {
             display='flex'
             justifyContent='space-between'
             alignItems='center'
-            flexDirection='row'
+            flexDirection={['column', 'column', 'row']}
           >
             <Box maxWidth='580px' p='20px' width='100%' alignItems='center'>
-              <Text fontSize='36px' fontWeight='600'>
+              <Text fontSize={['24px', '30px', '36px']} fontWeight='600'>
                 38 years of blending technology with craftsmanship to create
                 quality products and services
               </Text>
             </Box>
-            <Box width='45%'>
+            <Box width={['100%', '100%', '45%']}>
               <Text fontSize='18px' fontWeight='400'>
                 At Techno Glass, we are not just the experts in this field, but
                 also we have the resources and labour to process almost any type
@@ -45,7 +45,7 @@ function Aboutus() {
             maxWidth='1280px'
             justifyContent='center'
             p='15px 25px'
-            flexDirection='row'
+            flexDirection={['column', 'row', 'row']}
           >
             <Box display='flex' alignItems='center'>
               <Text color='#B7CC33' fontSize='48px' fontWeight='600'>
