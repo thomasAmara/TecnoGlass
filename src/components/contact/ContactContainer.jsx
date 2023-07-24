@@ -21,7 +21,7 @@ function ContactContainer() {
       <Box
         p='25px'
         display='flex'
-        flexDirection='row'
+        flexDirection={['column-reverse', 'column', 'row']}
         justifyContent='space-between'
         margin='0 auto'
         maxWidth='1180px'
